@@ -33,10 +33,11 @@ This project uses **Machine Learning (Gradient Boosting & others)** to predict *
 | KNN, SVM, Naive Bayes | Evaluated for comparison | ✅ |
 
 🧩 **Best Model:** Gradient Boosting  
-📊 **Best Train-Test Ratio:** 0.25  
+📊 **Best Train-Test Ratio:** 0.4  
 🎯 **Accuracy:** ~91%
 
 ---
+
 
 
 
