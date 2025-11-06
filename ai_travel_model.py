@@ -40,7 +40,7 @@ def load_and_train_model(file_path="destinations.csv"):
     y = dataset["Cost_enc"]
 
     # Split and train model
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
     model = GradientBoostingClassifier(random_state=42)
     model.fit(X_train, y_train)
 
@@ -112,3 +112,4 @@ if __name__ == "__main__":
     # Predict destinations
     predict_destinations(model, dataset, enc_country, enc_category, enc_cost,
                          user_country, user_category, user_budget)
+
