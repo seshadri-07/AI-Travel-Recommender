@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Recommender 🌍</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌎 AI Travel Recommender</h1>
+        <p>Discover your next travel destination using AI predictions!</p>
+
+        <form action="/predict" method="post">
+            <label for="country">🌍 Select Country:</label>
+            <input type="text" id="country" name="country" placeholder="e.g., Italy" required>
+
+            <label for="category">🏖️ Select Category:</label>
+            <input type="text" id="category" name="category" placeholder="e.g., City, Coastal Town, Lake" required>
+
+            <label for="budget">💰 Select Budget Preference:</label>
+            <input type="text" id="budget" name="budget" placeholder="e.g., Low, Medium, High" required>
+
+            <button type="submit">🔍 Find Best Destinations</button>
+        </form>
+
+        <footer>
+            <p>💡 Powered by Gradient Boosting AI | Developed by Seshadri's Assistant 🤖</p>
+        </footer>
+    </div>
+</body>
+</html>

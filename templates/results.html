@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Recommendations 🌍</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Top AI Travel Recommendations</h1>
+
+        <div class="prediction-box">
+            <h2>🤖 AI Predicted Cost-of-Living Trends</h2>
+            <p>{{ ai_summary }}</p>
+        </div>
+
+        {% if destinations %}
+        <div class="results-grid">
+            {% for dest in destinations %}
+            <div class="card">
+                <h3>{{ dest['Destination'] }}</h3>
+                <p><strong>Region:</strong> {{ dest['Region'] }}</p>
+                <p><strong>Country:</strong> {{ dest['Country'] }}</p>
+                <p><strong>Category:</strong> {{ dest['Category'] }}</p>
+                <p><strong>Cost of Living:</strong> 💰 {{ dest['Cost of Living'] }}</p>
+                <p><strong>Description:</strong> {{ dest['Description'] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-results">⚠️ No destinations found for your filters. Try adjusting your inputs!</p>
+        {% endif %}
+
+        <a href="/" class="back-btn">⬅️ Back to Search</a>
+
+        <footer>
+            <p>💡 Powered by Gradient Boosting AI | Developed by Seshadri's Assistant 🤖</p>
+        </footer>
+    </div>
+</body>
+</html>
