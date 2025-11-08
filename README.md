@@ -1,17 +1,17 @@
-# 🌎 AI Travel Recommender System
+#  AI Travel Recommender System
 
 Link: https://ai-travel-recommender.onrender.com/
 
 An **AI-powered Travel Recommendation System** that predicts the **best travel destinations** based on:
-- 🌍 Country  
-- 🏖️ Category (City, Coastal Town, Lake, etc.)  
-- 💰 Budget Preference (Low, Medium, High, etc.)  
+- Country  
+- Category (City, Coastal Town, Lake, etc.)  
+- Budget Preference (Low, Medium, High, etc.)  
 
 This project uses **Machine Learning (Gradient Boosting & others)** to predict **cost-of-living trends** and recommend **top destinations** that best fit user preferences.
 
 ---
 
-## 🚀 Features
+## Features
 
 ✅ Predicts **cost-of-living trends** (Low, Medium, High, etc.)  
 ✅ Suggests **Top destinations** based on user inputs  
@@ -22,7 +22,7 @@ This project uses **Machine Learning (Gradient Boosting & others)** to predict *
 
 ---
 
-## 🧠 Machine Learning Overview
+##  Machine Learning Overview
 
 | Model | Description | Status |
 |--------|--------------|--------|
@@ -32,11 +32,12 @@ This project uses **Machine Learning (Gradient Boosting & others)** to predict *
 | Logistic Regression | Linear classifier | ✅ |
 | KNN, SVM, Naive Bayes | Evaluated for comparison | ✅ |
 
-🧩 **Best Model:** Gradient Boosting  
-📊 **Best Train-Test Ratio:** 0.4  
-🎯 **Accuracy:** ~91%
+ **Best Model:** Gradient Boosting  
+ **Best Train-Test Ratio:** 0.4  
+ **Accuracy:** ~91%
 
 ---
+
 
 
 
