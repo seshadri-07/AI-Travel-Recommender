@@ -11,7 +11,7 @@
         <h1>🏆 Top AI Travel Recommendations</h1>
 
         <div class="prediction-box">
-            <h2>🤖 AI Predicted Cost-of-Living Trends</h2>
+            <h2> AI Predicted Cost-of-Living Trends</h2>
             <p>{{ ai_summary }}</p>
         </div>
 
@@ -23,20 +23,21 @@
                 <p><strong>Region:</strong> {{ dest['Region'] }}</p>
                 <p><strong>Country:</strong> {{ dest['Country'] }}</p>
                 <p><strong>Category:</strong> {{ dest['Category'] }}</p>
-                <p><strong>Cost of Living:</strong> 💰 {{ dest['Cost of Living'] }}</p>
+                <p><strong>Cost of Living:</strong>  {{ dest['Cost of Living'] }}</p>
                 <p><strong>Description:</strong> {{ dest['Description'] }}</p>
             </div>
             {% endfor %}
         </div>
         {% else %}
-        <p class="no-results">⚠️ No destinations found for your filters. Try adjusting your inputs!</p>
+        <p class="no-results"> No destinations found for your filters. Try to adjust your inputs based on the above Trends</p>
         {% endif %}
 
-        <a href="/" class="back-btn">⬅️ Back to Search</a>
+        <a href="/" class="back-btn"> Back to Search</a>
 
         <footer>
-            <p>💡 Powered by Gradient Boosting AI | Developed by Seshadri's Assistant 🤖</p>
+            <p>💡 Powered by Gradient Boosting AI | Developed by Seshadri Reddy</p>
         </footer>
     </div>
 </body>
 </html>
+
